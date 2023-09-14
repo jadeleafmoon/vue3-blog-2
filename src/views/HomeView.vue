@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Homepage</h1>
+    <div v-for="post in posts">
+      <p> {{ posts[0].title }}</p>
+    </div>
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { ref } from 'vue';
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld
+  setup() {
+    const posts = ref([
+      { title: 'Blog Post 1', snippet: 'This is blog post 1.', body: 'This is body 1.', id: 1},
+      { title: 'Blog Post 2', snippet: 'This is blog post 2.', body: 'This is body 2.', id: 2},
+      { title: 'Blog Post 3', snippet: 'This is blog post 3.', body: 'This is body 3.', id: 3},
+    ])
+
+    return { posts }
   }
+
 }
 </script>
