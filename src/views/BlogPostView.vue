@@ -5,9 +5,6 @@
       <p>{{ body }}</p>
     </div>
   </div>
-
-
-  
   <p></p>
 </template>
 

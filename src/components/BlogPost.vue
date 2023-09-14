@@ -15,7 +15,6 @@ export default {
 </script>
 
 <style>
-
 .post {
   background: white;
   width: 50vw;
