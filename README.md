@@ -1,19 +1,14 @@
-# vue3-blog-2
+# Blog with Composition API
+
+This is a playground to build a blog with Vue 3 using Composition API.
+
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
