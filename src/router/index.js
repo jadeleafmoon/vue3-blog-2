@@ -13,7 +13,7 @@ const routes = [
     name: 'about',
   },
   {
-    path: '/posts/:id',
+    path: '/posts/:id/:title/:body',
     name: 'blogpost',
     component: BlogPostView,
     props: true

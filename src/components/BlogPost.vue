@@ -17,7 +17,7 @@ export default {
 <style>
 
 .post {
-  /* background: lightcoral; */
+  background: white;
   width: 50vw;
   margin: 20px auto;
   padding: 10px;
