@@ -13,9 +13,10 @@ const routes = [
     name: 'about',
   },
   {
-    path: '/posts/',
+    path: '/posts/:id',
     name: 'blogpost',
-    component: BlogPostView
+    component: BlogPostView,
+    props: true
   },
 
 ]

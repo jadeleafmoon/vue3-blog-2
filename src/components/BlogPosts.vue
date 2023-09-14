@@ -1,6 +1,6 @@
 <template>
   <div v-for="post in posts">
-    <router-link to="posts" class="router-link">
+    <router-link :to="{ name: 'blogpost', params: { id: post.id }}" class="router-link">
       <BlogPost :post="post" :key="post.id" />
     </router-link>
     

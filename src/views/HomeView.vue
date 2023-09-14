@@ -7,7 +7,7 @@
 
 <script>
 import BlogPosts from '../components/BlogPosts.vue'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 export default {
   name: 'HomeView',
