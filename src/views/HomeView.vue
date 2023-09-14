@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>Homepage</h1>
-    <BlogPosts />
+    <BlogPosts :posts="posts"/>
   </div>
 </template>
 
