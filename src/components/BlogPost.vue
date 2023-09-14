@@ -23,10 +23,12 @@ export default {
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
+  transition: all .1s ease-in-out; 
 }
 
 .post:hover {
-  background: #eee;
+  
+  transform: scale(1.03);
   cursor: pointer;
 }
 

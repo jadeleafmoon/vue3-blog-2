@@ -20,10 +20,9 @@ export default {
 
 <style>
 
-
-
 .router-link {
   text-decoration: none;
   color: inherit;
 }
+
 </style>
