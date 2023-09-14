@@ -1,18 +1,17 @@
 <template>
   <div class="home">
     <h1>Homepage</h1>
-    <div v-for="post in posts">
-      <p> {{ posts[0].title }}</p>
-    </div>
-
+    <BlogPosts />
   </div>
 </template>
 
 <script>
+import BlogPosts from '../components/BlogPosts.vue'
 import { ref } from 'vue';
 
 export default {
   name: 'HomeView',
+  components: { BlogPosts },
   setup() {
     const posts = ref([
       { title: 'Blog Post 1', snippet: 'This is blog post 1.', body: 'This is body 1.', id: 1},
