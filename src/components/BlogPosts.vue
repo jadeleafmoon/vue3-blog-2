@@ -1,6 +1,9 @@
 <template>
   <div v-for="post in posts">
-    <BlogPost :post="post" :key="post.id" />
+    <router-link to="posts" class="router-link">
+      <BlogPost :post="post" :key="post.id" />
+    </router-link>
+    
   </div>
 
 </template>
@@ -17,4 +20,8 @@ export default {
 
 <style>
 
+.router-link {
+  text-decoration: none;
+  color: inherit;
+}
 </style>

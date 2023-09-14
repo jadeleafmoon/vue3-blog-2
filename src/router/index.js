@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import BlogPostView from '../views/BlogPostView.vue'
 
 const routes = [
   {
@@ -10,7 +11,13 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-  }
+  },
+  {
+    path: '/posts/',
+    name: 'blogpost',
+    component: BlogPostView
+  },
+
 ]
 
 const router = createRouter({
